@@ -1,0 +1,126 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+/* hide the up/down buttons in the <input type="number"> field */
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* custom styles go here */
+@font-face {
+  font-family: "dax";
+  src: url('../fonts/dax_regular.ttf') format('truetype');
+  font-size: 2em;
+}
+
+* {
+  font-family: "dax";
+}
+
+#register {
+  background-color: rgba(246, 255, 102, 0.86); /* RGBA(242,101,34,0.2) #73accd */
+  border-radius: 2em;
+  margin-top: 20px;
+  padding-top: 0.5%;
+  padding-bottom: 1.5%;
+  /* margin-left: 55%; please use bootstrap's grid system for alignment
+    ask na lang next time */
+}
+
+.container {
+  padding-top: 2.5%;
+}
+
+body  {
+  background: url(../img/house.jpg)no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#login {
+   background: #008D98;
+   color: #FFFFFF;
+}
+
+.btn {
+  color: #FFF;
+  background-color: #CC418A;
+  display: block;           /* start */
+  margin-left: auto;        /* this is how to center divs */
+  margin-right: auto;       /* end */
+  border-radius: 28px;
+  font-size: 1.2em;       /* try to use em instead of px for fonts (was 17px) */
+}
+
+#registration {
+  text-align: center;
+}
+
+#loginarea {
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  padding: 20px 20px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#misalogo {
+  width: 240px;
+  margin-bottom: 40px;
+}
+
+#eservslogo {
+  width: 100px;
+}
+
+.loginp {
+  font-weight: 100;
+}
+
+.form-control {
+  border-radius: 0px;
+  text-align: center;
+}
+
+#loginButton {
+  background-color: #008D98;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#loginButton:hover {
+  color: #BBF9FD;
+}
+
+input {
+  margin-top: 6px;
+  
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p.warning {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  color: #FF0000;
+}
+
+label {
+  text-align: center;
+  display: block;
+}
