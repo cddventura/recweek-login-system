@@ -56,13 +56,13 @@
     <?php
       session_start();
 
-      if(isset($_SESSION['valid_user'])
+      if(isset($_SESSION['valid_user']))
       {
         header('Location: login.php');
       }
       else
       {
-        if(isset($_POST['login']) && isset(&_POST['password']))
+        if(isset($_POST['login']) && isset($_POST['password']))
         {
           $login = $_POST['login'];
           $password = $_POST['password'];
@@ -72,6 +72,7 @@
             if you want to access the login.php,
             please comment out the code from $db to $result.
           */
+          /*
           $db = new mysqli('localhost', 'root', 'root', 'Recweek');
 
           if(mysqli_connect_errno())
@@ -82,6 +83,7 @@
 
           $query = 'select * from userinfo '."where usernmae='$login' "."and password=sha1('$password'";
           $result = $db->query($query);
+          */
 
 
           /*
@@ -90,7 +92,7 @@
             <|| ($login == "root" && &password == "root")> beside num_rows
           */
 
-          if($result->num_rows)
+          if($result->num_rows || ($login == "root" && $password == "root"))
           {
             $_SESSION['valid_user'] = $login;
             session_set_cookie_params(0);

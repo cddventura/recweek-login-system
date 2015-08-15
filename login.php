@@ -28,23 +28,76 @@
         echo '
           <div id="wrapper" class="container">
             <div class="row">
-              <div id="register" class="col-md-offset-7 col-md-4">
+              <div id="register" class="col-md-offset-5 col-md-7">
                 <h1 id="registration">Registration</h1>
                 <form id="form" action="submit.php" method="post">
                   <div class="form-group">
-                    <label for="id_number">ID Number</label>
-                    <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
-                    <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
+                    <div class="col-md-3">
+                      <label for="full_name">Full Name</label>
+                    </div>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Ted Mosby" required>
+                      <p id="name_warning" class="warning">Please input a name.</p>
+                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="full_name">Full Name</label>
-                    <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Ted Mosby" required>
-                    <p id="name_warning" class="warning">Please input a name.</p>
+                    <div class="col-md-2">
+                      <label for="id_number">ID Number</label>
+                    </div>
+                    <div class="col-md-4">
+                      <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
+                      <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="nickname">Nickname</label>
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" id="nickname" name="nickname" maxlength="64" autocomplete="off" placeholder="Teddy" required>
+                      <p id="name_warning" class="warning">Please input a nickname.</p>
+                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="cellphone_number">Cellphone Number</label>
-                    <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
-                    <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
+                    <div class="col-md-2">
+                      <label for="id_number">Year</label>
+                    </div>
+                    <div class="col-md-4">
+                      <input type="number" class="form-control" id="year" name="year" min="1" max="5" autocomplete="off" placeholder="3" required>
+                      <p id="year_warning" class="warning">Please input a valid year.</p>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="nickname">Course</label>
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" id="course" name="course" maxlength="64" autocomplete="off" placeholder="BS MIS" required>
+                      <p id="course_warning" class="warning">Please input a course.</p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-3">
+                      <label for="school">School</label>
+                    </div>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control" id="school" name="school" maxlength="64" autocomplete="off" placeholder="Ateneo de Manila High School" required>
+                      <p id="name_warning" class="warning">Please input a school.</p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-3">
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control" id="email" name="email" maxlength="64" autocomplete="off" placeholder="tedmosby@gmail.com" required>
+                      <p id="email_warning" class="warning">Please input an email.</p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-3">
+                      <label for="cellphone_number">Cellphone Number</label>
+                    </div>
+                    <div class="col-md-9">
+                      <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
+                      <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
+                    </div>
                   </div>
 
                   <button type="submit" id="submit" class="btn">Challenge Accepted!</button>
