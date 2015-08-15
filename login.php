@@ -14,33 +14,52 @@
     <![endif]-->
   </head>
   <body>
-    <div id="wrapper" class="container">
-      <div class="row">
-        <div id="register" class="col-md-offset-7 col-md-4">
-          <h1 id="registration">Registration</h1>
-          <form id="form" action="submit.php" method="post">
-            <div class="form-group">
-              <label for="id_number">ID Number</label>
-              <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
-              <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
-            </div>
-            <div class="form-group">
-              <label for="full_name">Full Name</label>
-              <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Ted Mosby" required>
-              <p id="name_warning" class="warning">Please input a name.</p>
-            </div>
-            <div class="form-group">
-              <label for="cellphone_number">Cellphone Number</label>
-              <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
-              <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
-            </div>
+    <?php
+      session_start();
 
-            <button type="submit" id="submit" class="btn">Challenge Accepted!</button>
-          </form>
-        </div>
-      </div>
-    </div>
+      if(isset($_SESSION['valid_user']))
+      {
 
+        /*
+          to design, use the html code
+          inside the echo statement. Be careful
+          not to mess things up.
+        */
+        echo '
+          <div id="wrapper" class="container">
+            <div class="row">
+              <div id="register" class="col-md-offset-7 col-md-4">
+                <h1 id="registration">Registration</h1>
+                <form id="form" action="submit.php" method="post">
+                  <div class="form-group">
+                    <label for="id_number">ID Number</label>
+                    <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
+                    <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Ted Mosby" required>
+                    <p id="name_warning" class="warning">Please input a name.</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="cellphone_number">Cellphone Number</label>
+                    <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
+                    <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
+                  </div>
+
+                  <button type="submit" id="submit" class="btn">Challenge Accepted!</button>
+                </form>
+                <a href="logout.php">Log out</a>
+              </div>
+            </div>
+          </div>
+        ';
+      }
+      else
+      {
+        header("Location: index.php");
+      }
+    ?>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/application.js"></script>

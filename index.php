@@ -67,6 +67,11 @@
           $login = $_POST['login'];
           $password = $_POST['password'];
 
+
+          /*
+            if you want to access the login.php,
+            please comment out the code from $db to $result.
+          */
           $db = new mysqli('localhost', 'root', 'root', 'Recweek');
 
           if(mysqli_connect_errno())
@@ -77,6 +82,13 @@
 
           $query = 'select * from userinfo '."where usernmae='$login' "."and password=sha1('$password'";
           $result = $db->query($query);
+
+
+          /*
+            if you want to access the login.php
+            for design, add this condition to the if statement
+            <|| ($login == "root" && &password == "root")> beside num_rows
+          */
 
           if($result->num_rows)
           {
