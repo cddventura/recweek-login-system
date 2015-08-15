@@ -17,3 +17,8 @@ Thumbs.db
 # Txt files #
 #############
 *.txt
+
+# Sublime text files #
+######################
+*.sublime-project
+*.sublime-workspace
