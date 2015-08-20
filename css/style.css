@@ -15,8 +15,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* custom styles go here */
 @font-face {
-  font-family: "dax";
-  src: url('../fonts/dax_regular.ttf') format('truetype');
+  font-family: "Nexa";
+  src: url('../fonts/Nexa Bold.otf') format('opentype');
   font-size: 2em;
 }
 
@@ -25,8 +25,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #register {
-  background-color: rgba(246, 255, 102, 0.86); /* RGBA(242,101,34,0.2) #73accd */
-  border-radius: 2em;
+  background-color: rgba(51, 153, 255, 1); /* RGBA(242,101,34,0.2) #73accd */
+  border-radius: 1em;
   margin-top: 20px;
   padding-top: 0.5%;
   padding-bottom: 1.5%;
@@ -109,6 +109,7 @@ input {
 }
 
 h1 {
+  font-family: 'Nexa';
   margin-bottom: 20px;
 }
 
@@ -123,4 +124,6 @@ p.warning {
 label {
   text-align: center;
   display: block;
+  font-family: 'Nexa';
+  margin-top: 5px;
 }
