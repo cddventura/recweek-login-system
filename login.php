@@ -60,32 +60,29 @@
                     <div class="col-md-2">
                       <label for="id_number">Year</label>
                     </div>
-                    <div class="col-md-4">
-                      <input type="number" class="form-control" id="year" name="year" min="1" max="5" autocomplete="off" placeholder="3" required>
+                    <div class="col-md-2">
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
                       <p id="year_warning" class="warning">Please input a valid year.</p>
                     </div>
                     <div class="col-md-2">
                       <label for="nickname">Course</label>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                       <input type="text" class="form-control" id="course" name="course" maxlength="64" autocomplete="off" placeholder="BS MIS" required>
                       <p id="course_warning" class="warning">Please input a course.</p>
-                    </div>
+                    </div>    
                   </div>
                   <div class="form-group">
-                    <div class="col-md-3">
-                      <label for="school">School</label>
-                    </div>
-                    <div class="col-md-9">
-                      <input type="text" class="form-control" id="school" name="school" maxlength="64" autocomplete="off" placeholder="Ateneo de Manila High School" required>
-                      <p id="name_warning" class="warning">Please input a school.</p>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                       <label for="email">Email</label>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-10">
                       <input type="text" class="form-control" id="email" name="email" maxlength="64" autocomplete="off" placeholder="tedmosby@gmail.com" required>
                       <p id="email_warning" class="warning">Please input an email.</p>
                     </div>
@@ -99,10 +96,41 @@
                       <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
                     </div>
                   </div>
-
-                  <button type="submit" id="submit" class="btn">Challenge Accepted!</button>
+                  <div class="form-group">
+                    <div class="col-md-2">
+                      <label for="school">School</label>
+                    </div>
+                    <div class="col-md-2">
+                      <select>
+                        <option value="SOSE">SOSE</option>
+                        <option value="SOSS">SOSS</option>
+                        <option value="SOM">SOM</option>
+                        <option value="SOH">SOH</option>
+                      </select>
+                      <p id="name_warning" class="warning">Please input a school.</p>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="memStat">Old/New</label>
+                    </div>
+                    <div class="col-md-2">
+                      <input type="radio" name="memStat" value="old">Old
+                      <input type="radio" name="memStat" value="new">New
+                    </div>
+                    <div class="col-md-2">
+                      <label for="paid">Paid</label>
+                    </div>
+                    <div class="col-md-2">
+                      <input type="radio" name="paid" value="yes">Yes
+                      <input type="radio" name="paid" value="no">No
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" id="submit" class="btn">Challenge Accepted!</button>
+                  </div>
                 </form>
-                <a href="logout.php">Log out</a>
+                <div class="col-md-12">
+                  <a href="logout.php">Log out</a>
+                </div>
               </div>
             </div>
           </div>
