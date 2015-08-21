@@ -41,27 +41,29 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-md-2">
-                      <label for="id_number">ID Number</label>
-                    </div>
-                    <div class="col-md-4">
-                      <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
-                      <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
-                    </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                       <label for="nickname">Nickname</label>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-9">
                       <input type="text" class="form-control" id="nickname" name="nickname" maxlength="64" autocomplete="off" placeholder="Teddy" required>
                       <p id="name_warning" class="warning">Please input a nickname.</p>
+                    </div>
+                  </div>
+                     <div class="form-group">
+                    <div class="col-md-3">
+                      <label for="id_number">ID Number</label>
+                    </div>
+                    <div class="col-md-9">
+                      <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
+                      <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="col-md-2">
                       <label for="id_number">Year</label>
                     </div>
-                    <div class="col-md-2">
-                      <select>
+                    <div class="col-md-4">
+                      <select class = "dropdown">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -73,35 +75,37 @@
                     <div class="col-md-2">
                       <label for="nickname">Course</label>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                       <input type="text" class="form-control" id="course" name="course" maxlength="64" autocomplete="off" placeholder="BS MIS" required>
                       <p id="course_warning" class="warning">Please input a course.</p>
                     </div>    
                   </div>
                   <div class="form-group">
-                    <div class="col-md-2">
+                    <div class="col-md-4">
+                      <label for="cellphone_number">Cellphone Number</label>
+                    </div>
+                    <div class="col-md-8">
+                      <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
+                      <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
+                    </div>
+                  </div>
+                     <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-3">
                       <label for="email">Email</label>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-9">
                       <input type="text" class="form-control" id="email" name="email" maxlength="64" autocomplete="off" placeholder="tedmosby@gmail.com" required>
                       <p id="email_warning" class="warning">Please input an email.</p>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class="col-md-3">
-                      <label for="cellphone_number">Cellphone Number</label>
-                    </div>
-                    <div class="col-md-9">
-                      <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
-                      <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
-                    </div>
                   </div>
                   <div class="form-group">
                     <div class="col-md-2">
                       <label for="school">School</label>
                     </div>
                     <div class="col-md-2">
-                      <select>
+                      <select class="dropdown">
                         <option value="SOSE">SOSE</option>
                         <option value="SOSS">SOSS</option>
                         <option value="SOM">SOM</option>

@@ -26,7 +26,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #register {
   background-color: rgba(51, 153, 255, 1); /* RGBA(242,101,34,0.2) #73accd */
-  border-radius: 1em;
+  border-radius: 2em;
   margin-top: 20px;
   padding-top: 0.5%;
   padding-bottom: 1.5%;
@@ -125,5 +125,10 @@ label {
   text-align: center;
   display: block;
   font-family: 'Nexa';
-  margin-top: 5px;
+  margin-top: 12px;
 }
+
+.dropdown {
+  margin-top:11px;
+}
+
