@@ -1,5 +1,5 @@
 <?php
-$db = new mysqli("localhost", "root", "root", "hr_training_session_registration_system");
+$db = new mysqli("localhost", "root", "root", "Recweek");
 if ($db->connect_errno) {
     echo "Failed to connect to MySQL: " . $db->connect_error;
 }

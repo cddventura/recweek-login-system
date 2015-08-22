@@ -32,6 +32,15 @@
                 <h1 id="registration">Registration</h1>
                 <form id="form" action="submit.php" method="post">
                   <div class="form-group">
+                  <div class="col-md-3">
+                   <label for="id_number">ID Number</label>
+                  </div>
+                  <div class="col-md-9">
+                   <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
+                   <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
+                  </div>
+                  </div>
+                  <div class="form-group">
                     <div class="col-md-3">
                       <label for="full_name">Full Name</label>
                     </div>
@@ -49,21 +58,12 @@
                       <p id="name_warning" class="warning">Please input a nickname.</p>
                     </div>
                   </div>
-                     <div class="form-group">
-                    <div class="col-md-3">
-                      <label for="id_number">ID Number</label>
-                    </div>
-                    <div class="col-md-9">
-                      <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
-                      <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
-                    </div>
-                  </div>
                   <div class="form-group">
                     <div class="col-md-2">
-                      <label for="id_number">Year</label>
+                      <label for="year">Year</label>
                     </div>
                     <div class="col-md-4">
-                      <select class = "dropdown">
+                      <select class = "dropdown" name="year">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -73,12 +73,12 @@
                       <p id="year_warning" class="warning">Please input a valid year.</p>
                     </div>
                     <div class="col-md-2">
-                      <label for="nickname">Course</label>
+                      <label for="course">Course</label>
                     </div>
                     <div class="col-md-4">
                       <input type="text" class="form-control" id="course" name="course" maxlength="64" autocomplete="off" placeholder="BS MIS" required>
                       <p id="course_warning" class="warning">Please input a course.</p>
-                    </div>    
+                    </div>
                   </div>
                   <div class="form-group">
                     <div class="col-md-4">
@@ -105,7 +105,7 @@
                       <label for="school">School</label>
                     </div>
                     <div class="col-md-2">
-                      <select class="dropdown">
+                      <select class="dropdown" name="school">
                         <option value="SOSE">SOSE</option>
                         <option value="SOSS">SOSS</option>
                         <option value="SOM">SOM</option>
