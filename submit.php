@@ -15,8 +15,8 @@
 		$paid = $_POST['paid'];
 
 
-		$db->query("insert into signup (stu_id, stu_full_name, stu_nickname, stu_year, stu_course, stu_cell_num, stu_email, stu_school, stu_memstat, stu_paid)
-		  values ('$id_number', '$full_name', '$nickname', '$year', '$course', '$cellphone_number', '$email', '$school', '$memstat', '$paid')");
+		$db->query("INSERT INTO signups (stu_id, stu_full_name, stu_nickname, stu_year, stu_course, stu_cell_number, stu_email, stu_school, stu_memstat, stu_paid)
+		  VALUES ('$id_number', '$full_name', '$nickname', '$year', '$course', '$cellphone_number', '$email', '$school', '$memstat', '$paid')");
 
 		$db->close();
 
