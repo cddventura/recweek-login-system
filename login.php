@@ -134,6 +134,18 @@
               </div>
             </div>
           </div>
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="accepted">
+  			<div class="modal-dialog modal-lg">
+    				<div class="modal-content">
+     				 <h2>Welcome to MISA!</h2>
+				 <h3 id="member_nickname"></h3>
+				 <h3 id="member_year"></h3>
+				<div class="modal-footer">
+        			 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      				</div>
+    				</div>
+  			</div>
+		</div>
         ';
       }
       else

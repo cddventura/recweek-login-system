@@ -66,6 +66,11 @@ body  {
   text-align: center;
 }
 
+#accepted h2, h3 {
+  font-family: 'Nexa';
+  text-align: center;
+}
+
 #loginarea {
   border-radius: 20px;
   border: 2px solid #ffffff;
@@ -106,7 +111,7 @@ body  {
 
 input {
   margin-top: 6px;
-  
+
 }
 
 h1 {
@@ -132,4 +137,3 @@ label {
 .dropdown {
   margin-top:11px;
 }
-
