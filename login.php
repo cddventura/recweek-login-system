@@ -41,17 +41,17 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                       <label for="full_name">Full Name</label>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                       <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Loyola, Ignacio A." required>
                       <p id="name_warning" class="warning">Please input a name.</p>
                     </div>
                     <div class="col-md-2">
                       <label for="nickname">Nickname</label>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                       <input type="text" class="form-control" id="nickname" name="nickname" maxlength="64" autocomplete="off" placeholder="Iggy" required>
                       <p id="name_warning" class="warning">Please input a nickname.</p>
                     </div>
@@ -60,7 +60,7 @@
                     <div class="col-md-2">
                       <label for="year">Year</label>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                       <select class = "dropdown" name="year" id="year">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -68,62 +68,71 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                       </select>
-                      <p id="year_warning" class="warning">Please input a valid year.</p>
                     </div>
                     <div class="col-md-2">
                       <label for="course">Course</label>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                       <input type="text" class="form-control" id="course" name="course" maxlength="64" autocomplete="off" placeholder="BS MIS" required>
-                      <p id="course_warning" class="warning">Please input a course.</p>
+                      <p id="course_warning" class="warning">*</p>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-md-6">
+                        <label for="school">School</label>
+                      </div>
+                      <div class="col-md-6">
+                        <select class="dropdown" name="school">
+                          <option value="SOSE">SOSE</option>
+                          <option value="SOSS">SOSS</option>
+                          <option value="SOM">SOM</option>
+                          <option value="SOH">SOH</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  &nbsp;
+                  &nbsp;
+                  &nbsp;
                   <div class="row">
                     <div class="form-group">
                       <div class="col-md-2">
                         <label for="cellphone_number">Cellphone Number</label>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-10">
                         <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
                         <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
-                      </div>
-                      <div class="col-md-2">
-                        <label for="email">Email</label>
-                      </div>
-                      <div class="col-md-5">
-                        <input type="text" class="form-control" id="email" name="email" maxlength="64" autocomplete="off" placeholder="tedmosby@gmail.com" required>
-                        <p id="email_warning" class="warning">Please input an email.</p>
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="col-md-2">
-                      <label for="school">School</label>
+                      <label for="email">Email</label>
                     </div>
-                    <div class="col-md-2">
-                      <select class="dropdown" name="school">
-                        <option value="SOSE">SOSE</option>
-                        <option value="SOSS">SOSS</option>
-                        <option value="SOM">SOM</option>
-                        <option value="SOH">SOH</option>
-                      </select>
-                      <p id="name_warning" class="warning">Input school.</p>
+                    <div class="col-md-10">
+                      <input type="text" class="form-control" id="email" name="email" maxlength="64" autocomplete="off" placeholder="tedmosby@gmail.com" required>
+                      <p id="email_warning" class="warning">Please input an email.</p>
                     </div>
+                  </div>
+                  <div class="form-group">
                     <div class="col-md-2">
                       <label for="memStat">Old/New</label>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                       <input type="radio" name="memStat" value="old">Old
                       <input type="radio" name="memStat" value="new">New
                     </div>
                     <div class="col-md-2">
                       <label for="paid">Paid</label>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                       <input type="radio" name="paid" value="yes">Yes
                       <input type="radio" name="paid" value="no">No
                     </div>
                   </div>
+                  &nbsp;
+                  &nbsp;
                   <div class="col-md-12">
                     <button type="submit" id="submit" class="btn">Challenge Accepted!</button>
                   </div>

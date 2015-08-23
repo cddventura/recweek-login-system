@@ -20,6 +20,12 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 2em;
 }
 
+input[type="text"], input[type=number], input[type=radio] + label, .dropdown {
+  font-family: "Nexa";
+  src: url('../fonts/Nexa Bold.otf') format('opentype');
+  font-size: 1em;
+}
+
 * {
   font-family: "dax";
 }
