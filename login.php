@@ -119,17 +119,33 @@
                     <div class="col-md-2">
                       <label for="memStat">Old/New</label>
                     </div>
-                    <div class="col-md-4">
-                      <input type="radio" name="memStat" value="old">Old
-                      <input type="radio" name="memStat" value="new">New
+                    <div class="col-md-1">
+                      <input type="radio" name="memStat" value="old">
                     </div>
+                    <div class="col-md-1">
+                      <label for="old">Old</label>
+                    </div>
+                    <div class="col-md-1">
+                      <input type="radio" name="memStat" value="new">
+                    </div>
+                    <div class="col-md-1">
+                      <label for="new">New</label>
+                    </div>  
                     <div class="col-md-2">
                       <label for="paid">Paid</label>
                     </div>
-                    <div class="col-md-4">
-                      <input type="radio" name="paid" value="yes">Yes
-                      <input type="radio" name="paid" value="no">No
+                    <div class="col-md-1">
+                      <input type="radio" name="paid" value="yes">
                     </div>
+                    <div class="col-md-1">
+                      <label for="yes">Yes</label>
+                    </div>
+                    <div class="col-md-1">
+                      <input type="radio" name="paid" value="n">
+                    </div>
+                    <div class="col-md-1">
+                      <label for="no">No</label>
+                    </div>  
                   </div>
                   &nbsp;
                   &nbsp;
