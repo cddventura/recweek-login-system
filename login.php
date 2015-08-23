@@ -61,7 +61,7 @@
                       <label for="year">Year</label>
                     </div>
                     <div class="col-md-4">
-                      <select class = "dropdown" name="year">
+                      <select class = "dropdown" name="year" id="year">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
