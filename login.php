@@ -32,29 +32,27 @@
                 <h1 id="registration">Registration</h1>
                 <form id="form" action="submit.php" method="post">
                   <div class="form-group">
-                  <div class="col-md-3">
-                   <label for="id_number">ID Number</label>
-                  </div>
-                  <div class="col-md-9">
-                   <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
-                   <p id="idnumber_warning" class="warning">Please input a valid ID Number.</p>
-                  </div>
-                  </div>
-                  <div class="form-group">
                     <div class="col-md-3">
                       <label for="full_name">Full Name</label>
                     </div>
                     <div class="col-md-9">
-                      <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Ted Mosby" required>
+                      <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Loyola, Ignacio A." required>
                       <p id="name_warning" class="warning">Please input a name.</p>
                     </div>
                   </div>
                   <div class="form-group">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
+                      <label for="id_number">ID Number</label>
+                    </div>
+                    <div class="col-md-4">
+                      <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
+                      <p id="idnumber_warning" class="warning">Please input ID No.</p>
+                    </div>
+                    <div class="col-md-2">
                       <label for="nickname">Nickname</label>
                     </div>
-                    <div class="col-md-9">
-                      <input type="text" class="form-control" id="nickname" name="nickname" maxlength="64" autocomplete="off" placeholder="Teddy" required>
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" id="nickname" name="nickname" maxlength="64" autocomplete="off" placeholder="Iggy" required>
                       <p id="name_warning" class="warning">Please input a nickname.</p>
                     </div>
                   </div>
@@ -80,25 +78,23 @@
                       <p id="course_warning" class="warning">Please input a course.</p>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class="col-md-4">
-                      <label for="cellphone_number">Cellphone Number</label>
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-md-2">
+                        <label for="cellphone_number">Cellphone Number</label>
+                      </div>
+                      <div class="col-md-3">
+                        <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
+                        <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
+                      </div>
+                      <div class="col-md-2">
+                        <label for="email">Email</label>
+                      </div>
+                      <div class="col-md-5">
+                        <input type="text" class="form-control" id="email" name="email" maxlength="64" autocomplete="off" placeholder="tedmosby@gmail.com" required>
+                        <p id="email_warning" class="warning">Please input an email.</p>
+                      </div>
                     </div>
-                    <div class="col-md-8">
-                      <input type="number" class="form-control" id="cellphone_number" name="cellphone_number" min="09000000000" max="09999999999" autocomplete="off" placeholder="09171234123" required>
-                      <p id="cell_warning" class="warning">Please input a valid cellphone number.</p>
-                    </div>
-                  </div>
-                     <div class="row">
-                  <div class="form-group">
-                    <div class="col-md-3">
-                      <label for="email">Email</label>
-                    </div>
-                    <div class="col-md-9">
-                      <input type="text" class="form-control" id="email" name="email" maxlength="64" autocomplete="off" placeholder="tedmosby@gmail.com" required>
-                      <p id="email_warning" class="warning">Please input an email.</p>
-                    </div>
-                  </div>
                   </div>
                   <div class="form-group">
                     <div class="col-md-2">
@@ -111,7 +107,7 @@
                         <option value="SOM">SOM</option>
                         <option value="SOH">SOH</option>
                       </select>
-                      <p id="name_warning" class="warning">Please input a school.</p>
+                      <p id="name_warning" class="warning">Input school.</p>
                     </div>
                     <div class="col-md-2">
                       <label for="memStat">Old/New</label>
