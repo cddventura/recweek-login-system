@@ -33,20 +33,20 @@
                 <form id="form" action="submit.php" method="post">
                   <div class="form-group">
                     <div class="col-md-3">
-                      <label for="full_name">Full Name</label>
+                      <label for="id_number">ID Number</label>
                     </div>
                     <div class="col-md-9">
-                      <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Loyola, Ignacio A." required>
-                      <p id="name_warning" class="warning">Please input a name.</p>
+                      <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
+                      <p id="idnumber_warning" class="warning">Please input ID No.</p>
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="col-md-2">
-                      <label for="id_number">ID Number</label>
+                      <label for="full_name">Full Name</label>
                     </div>
                     <div class="col-md-4">
-                      <input type="number" class="form-control" id="id_number" name="id_number" min="110000" max="160000" autocomplete="off" placeholder="101010" required>
-                      <p id="idnumber_warning" class="warning">Please input ID No.</p>
+                      <input type="text" class="form-control" id="full_name" name="full_name" maxlength="64" autocomplete="off" placeholder="Loyola, Ignacio A." required>
+                      <p id="name_warning" class="warning">Please input a name.</p>
                     </div>
                     <div class="col-md-2">
                       <label for="nickname">Nickname</label>
