@@ -1,6 +1,10 @@
 #README
 
-For Documenting to both future proj developers
-and for the Users of the system.
+Final working version for ADMU MISA Recweek Registration system.
 
-we'll fill this up later on when we are done...
+Developers:
+
+Robert Cuartero - HTML & CSS
+Harvey Li - HTML & CSS
+Charles Ventura - PHP
+Dominic Yap - Javascript
